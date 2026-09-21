@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+  }
+  body {
+    @apply bg-background text-on-surface antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-surface-container-low;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-outline-variant rounded-full;
+  }
+}
+
+@layer components {
+  .material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  .sidebar-nav-item {
+    @apply flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg text-on-surface-variant 
+           hover:bg-surface-container hover:text-on-surface transition-colors cursor-pointer;
+  }
+  .sidebar-nav-item.active {
+    @apply bg-primary-container text-on-primary-container font-semibold;
+  }
+
+  .kpi-card {
+    @apply bg-surface-container-lowest rounded-xl p-space-md shadow-sm 
+           flex flex-col justify-between hover:shadow-md transition-shadow;
+  }
+
+  .btn-primary {
+    @apply px-space-md py-space-xs rounded-lg bg-primary font-label-md text-label-md 
+           text-on-primary hover:bg-primary-container shadow-sm transition-all 
+           flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply px-space-md py-space-xs rounded-lg bg-surface-container font-label-md 
+           text-label-md text-on-surface hover:bg-surface-container-high shadow-sm 
+           transition-all flex items-center gap-2;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2 py-0.5 rounded-full font-label-sm text-label-sm;
+  }
+  .badge-green {
+    @apply badge bg-primary/10 text-primary;
+  }
+  .badge-blue {
+    @apply badge bg-secondary/10 text-secondary;
+  }
+  .badge-amber {
+    @apply badge bg-tertiary/10 text-tertiary;
+  }
+  .badge-red {
+    @apply badge bg-error/10 text-error;
+  }
+  .badge-demo {
+    @apply badge bg-tertiary-fixed text-on-tertiary-fixed;
+  }
+}
