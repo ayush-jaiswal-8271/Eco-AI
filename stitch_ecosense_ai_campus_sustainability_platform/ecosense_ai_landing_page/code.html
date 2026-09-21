@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary":"#825100","primary":"#006948","secondary-fixed":"#cce5ff","secondary":"#006398","primary-fixed":"#85f8c4","on-surface":"#131b2e","on-surface-variant":"#3d4a42","tertiary-container":"#a36700","on-primary-fixed":"#002114","surface-container-highest":"#dae2fd","tertiary-fixed":"#ffddb8","on-secondary-fixed":"#001d31","surface-container-lowest":"#ffffff","on-tertiary":"#ffffff","inverse-on-surface":"#eef0ff","on-tertiary-fixed":"#2a1700","error-container":"#ffdad6","outline-variant":"#bccac0","background":"#faf8ff","on-primary-container":"#f5fff7","secondary-container":"#5bb8fe","surface-bright":"#faf8ff","inverse-primary":"#68dba9","surface-container-low":"#f2f3ff","surface-dim":"#d2d9f4","on-error-container":"#93000a","surface":"#faf8ff","primary-container":"#00855d","on-primary":"#ffffff","surface-container":"#eaedff","on-secondary-container":"#00476e","on-tertiary-container":"#fffbff","on-secondary-fixed-variant":"#004b73","outline":"#6d7a72","on-error":"#ffffff","primary-fixed-dim":"#68dba9","surface-variant":"#dae2fd","on-background":"#131b2e","secondary-fixed-dim":"#93ccff","on-secondary":"#ffffff","error":"#ba1a1a","inverse-surface":"#283044","surface-container-high":"#e2e7ff","on-primary-fixed-variant":"#005137","surface-tint":"#006c4a","on-tertiary-fixed-variant":"#653e00","tertiary-fixed-dim":"#ffb95f"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"space-xl":"2rem","space-sm":"0.5rem","gutter-sm":"1rem","margin-sm":"1rem","gutter":"1.5rem","margin":"2rem","space-xs":"0.25rem","space-md":"1rem","space-lg":"1.5rem"},"fontFamily":{"code":["JetBrains Mono"],"display":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-mobile":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"],"label-sm":["Inter"],"metric-md":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-md":["Inter"],"metric-xl":["Plus Jakarta Sans"],"body-sm":["Inter"],"headline-md":["Plus Jakarta Sans"]},"fontSize":{"code":["12px",{"lineHeight":"16px","fontWeight":"500"}],"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"display-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"metric-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"metric-xl":["32px",{"lineHeight":"38px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 w-full px-gutter flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="EcoSense AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vxg7CX3_dkqnKx2RVPL5Ftm71SI0ChmHyC-gbQf1lKTOkxEHr_lXrMamvsRuVfMapMNyDHQ8DiKWu2-tK0RYGM15YxqzXaqJfgpMPqFPfW4_5WUu-1yHb6lygZIn-rzS9VmOYQdm66WfT2rDHGhHKWkVpByLzQaSbKx8itr4nIcl__NyIF0hcgztx2KtfRritebkQsUbDyoyH2NC831-w-i4MBknYoTFbVA9OTVkS16mnbLYuqGpbXRVOt"/><span class="font-headline-sm text-headline-sm text-on-surface">EcoSense AI</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-colors text-primary font-semibold" data-path="landing-page" href="#">Platform</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="resource-analytics" href="#">Telemetry Models</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="reports" href="#">Impact</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="settings-governance" href="#">Ethics &amp; Governance</a></nav><div class="flex items-center gap-space-sm"><a class="px-space-md py-space-xs rounded-lg bg-primary font-label-md text-label-md text-on-primary hover:bg-primary-container transition-colors" data-path="main-dashboard" href="#">Console Access</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 bg-background"><div class="flex flex-col w-full">
+<!-- Top Hero Visual & Banner Area -->
+<section class="relative w-full overflow-hidden pt-space-xl pb-space-xl px-gutter md:px-margin">
+<!-- Ambient Backdrop Gradient Circles -->
+<div class="absolute -top-24 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-primary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-96 -left-40 w-96 h-96 bg-secondary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="absolute top-80 -right-40 w-96 h-96 bg-tertiary/10 rounded-full blur-3xl pointer-events-none -z-10"></div>
+<div class="max-w-7xl mx-auto flex flex-col items-center text-center">
+<!-- Release Pill Badge -->
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-surface-container shadow-sm hover:bg-surface-container-high transition-colors cursor-pointer mb-space-lg">
+<span class="material-symbols-outlined text-primary text-[16px]">auto_awesome</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary">AI FOR CAMPUS SUSTAINABILITY • VERSION 3.2 RELEASED</span>
+<span class="material-symbols-outlined text-on-surface-variant text-[14px]">arrow_forward</span>
+</div>
+<!-- Main Typography Lockup -->
+<h1 class="font-display text-display max-w-4xl text-on-surface tracking-tight mb-space-md">
+        Turn Campus Data Into <span class="text-primary font-bold">Sustainable Action</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mb-space-xl">
+        EcoSense AI helps educational institutions understand resource consumption, detect sustainability issues, classify waste with computer vision, and make data-driven decisions with verified AI.
+      </p>
+<!-- Primary Action CTAs -->
+<div class="flex flex-wrap items-center justify-center gap-space-sm sm:gap-space-md mb-space-xl">
+<a class="px-space-lg py-space-sm rounded-lg bg-primary font-label-md text-label-md text-on-primary hover:bg-primary-container shadow-sm transition-all flex items-center gap-2" data-path="main-dashboard" href="#">
+<span>Explore Dashboard</span>
+<span class="material-symbols-outlined text-[18px]">space_dashboard</span>
+</a>
+<a class="px-space-lg py-space-sm rounded-lg bg-surface-container font-label-md text-label-md text-on-surface hover:bg-surface-container-high shadow-sm transition-all flex items-center gap-2" href="#how-it-works">
+<span>See How It Works</span>
+<span class="material-symbols-outlined text-[18px]">play_circle</span>
+</a>
+<button class="px-space-md py-space-sm rounded-lg bg-surface-container-lowest text-secondary font-label-md text-label-md hover:bg-surface-container transition-all shadow-sm flex items-center gap-1.5" onclick="document.getElementById('demo-modal').classList.remove('hidden')">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Book Institutional Demo</span>
+</button>
+</div>
+<!-- Live Mockup Container / Dashboard View -->
+<div class="w-full max-w-6xl mt-4 rounded-xl shadow-xl bg-surface-container-lowest p-space-sm sm:p-space-md">
+<!-- Mockup Shell Bar -->
+<div class="flex items-center justify-between px-space-sm py-2 mb-space-sm bg-surface-container-low rounded-lg">
+<div class="flex items-center gap-2">
+<div class="w-2.5 h-2.5 rounded-full bg-error"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-tertiary-container"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-primary-container"></div>
+<span class="font-code text-code text-on-surface-variant ml-2 hidden sm:inline-block">ecosense-core.telemetry.stanford-quad-west.internal</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+              Live Grid Feed
+            </span>
+<span class="font-code text-code text-on-surface-variant">UTC-07:00</span>
+</div>
+</div>
+<!-- Inner Dashboard Canvas Grid -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-space-md text-left">
+<!-- KPI 1: Sustainability Index -->
+<div class="md:col-span-3 bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Campus Score</span>
+<span class="material-symbols-outlined text-primary text-[20px]">verified</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="font-metric-xl text-metric-xl text-on-surface">78</span>
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">/100</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm ml-auto">+4.2 pts</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-3 overflow-hidden">
+<div class="bg-primary h-full rounded-full" style="width: 78%"></div>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-2">Rank 4 of 32 Institutional Quads</span>
+</div>
+<!-- KPI 2: Real-time Power -->
+<div class="md:col-span-3 bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Current Load</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">bolt</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-xl text-metric-xl text-on-surface">24,680</span>
+<span class="font-label-md text-label-md text-on-surface-variant">kWh</span>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="px-2 py-0.5 rounded-full bg-primary/10 text-primary font-label-sm text-label-sm flex items-center">
+<span class="material-symbols-outlined text-[14px]">arrow_downward</span> 8.4%
+              </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">vs. 30d baseline</span>
+</div>
+<!-- Sparkline Micro SVG -->
+<div class="h-6 w-full mt-1">
+<svg class="w-full h-full text-secondary" fill="none" preserveaspectratio="none" viewbox="0 0 100 24">
+<path d="M0 18 Q 15 8, 30 14 T 60 6 T 85 16 T 100 8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2.5"></path>
+</svg>
+</div>
+</div>
+<!-- KPI 3: Waste Diverted -->
+<div class="md:col-span-3 bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Waste Sorted (24h)</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">recycling</span>
+</div>
+<div class="flex items-baseline gap-1">
+<span class="font-metric-xl text-metric-xl text-on-surface">1,240</span>
+<span class="font-label-md text-label-md text-on-surface-variant">kg</span>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="px-2 py-0.5 rounded-full bg-tertiary/10 text-tertiary font-label-sm text-label-sm">84.2% Diverted</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Compost &amp; Glass</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full mt-3 flex gap-1 overflow-hidden">
+<div class="bg-primary h-full" style="width: 55%"></div>
+<div class="bg-secondary h-full" style="width: 29%"></div>
+<div class="bg-tertiary-container h-full" style="width: 16%"></div>
+</div>
+</div>
+<!-- KPI 4: Active Telemetry Warning -->
+<div class="md:col-span-3 bg-surface-container-high p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-error font-semibold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">warning</span> Anomaly Alert
+              </span>
+<span class="font-code text-code text-on-surface-variant">09:14 AM</span>
+</div>
+<div class="my-2">
+<h4 class="font-headline-sm text-headline-sm text-on-surface leading-tight">Science Hall B Chiller</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Unscheduled 42% thermal drift observed during unoccupied cycle.</p>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-error">Est. Loss: $280/day</span>
+<button class="px-2 py-1 bg-surface-container-lowest text-primary rounded-lg font-label-sm text-label-sm shadow-sm hover:bg-surface-bright">Dispatch</button>
+</div>
+</div>
+<!-- Mid Chart Panel: 24-Hour Telemetry Streams -->
+<div class="md:col-span-8 bg-surface-container-low p-space-md rounded-xl shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Campus Power &amp; Solar Synchrony</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Real-time sub-metered intake vs. rooftop solar harvest</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant"><span class="w-2.5 h-2.5 rounded-full bg-primary"></span> Solar Gen</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant"><span class="w-2.5 h-2.5 rounded-full bg-secondary"></span> Grid Draw</span>
+</div>
+</div>
+<!-- Vector Multi-Line Telemetry Graph -->
+<div class="h-44 w-full relative">
+<svg class="w-full h-full overflow-visible" fill="none" preserveaspectratio="none" viewbox="0 0 500 150">
+<!-- Grid Lines -->
+<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="3 3" x1="0" x2="500" y1="30" y2="30"></line>
+<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="3 3" x1="0" x2="500" y1="75" y2="75"></line>
+<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="3 3" x1="0" x2="500" y1="120" y2="120"></line>
+<!-- Solar Curve (Green Area) -->
+<path class="fill-primary/10" d="M0 140 Q 120 135, 200 60 T 320 40 T 420 110 L 500 135 L 500 150 L 0 150 Z"></path>
+<path d="M0 140 Q 120 135, 200 60 T 320 40 T 420 110 L 500 135" stroke="#006948" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Grid Demand (Blue Line) -->
+<path d="M0 65 Q 100 80, 200 110 T 350 85 T 500 50" stroke="#006398" stroke-linecap="round" stroke-width="2"></path>
+</svg>
+</div>
+<div class="flex justify-between font-code text-code text-on-surface-variant pt-2">
+<span>00:00</span>
+<span>04:00</span>
+<span>08:00</span>
+<span>12:00</span>
+<span>16:00</span>
+<span>20:00</span>
+<span>23:59</span>
+</div>
+</div>
+<!-- Mid Right: AI Prescriptive Automation Queue -->
+<div class="md:col-span-4 bg-surface-container-low p-space-md rounded-xl shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Verified AI Directives</h3>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-full bg-secondary/15 text-secondary">3 Ready</span>
+</div>
+<ul class="space-y-space-sm">
+<li class="p-2.5 rounded-lg bg-surface-container-lowest shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[18px] mt-0.5">thermostat</span>
+<div class="text-left flex-1 min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Pre-cool Central Library at 05:00</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Saves 420 kWh peak electricity</p>
+</div>
+<span class="font-code text-code text-primary font-bold">-$145</span>
+</li>
+<li class="p-2.5 rounded-lg bg-surface-container-lowest shadow-sm flex items-start gap-3">
+<span class="material-symbols-outlined text-secondary text-[18px] mt-0.5">water_drop</span>
+<div class="text-left flex-1 min-w-0">
+<p class="font-label-md text-label-md text-on-surface truncate">Adjust Irrigation via Rainfall Forecast</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hold North Oval valves for 48h</p>
+</div>
+<span class="font-code text-code text-secondary font-bold">-18k L</span>
+</li>
+</ul>
+</div>
+<div class="pt-space-sm">
+<a class="w-full block text-center py-2 bg-primary/10 text-primary font-label-md text-label-md rounded-lg hover:bg-primary/20 transition-colors" data-path="resource-analytics" href="#">
+                Run Multi-Quad Optimization
+              </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Institutional Logos / Validation Strip -->
+<section class="w-full py-space-lg bg-surface-container-low px-gutter md:px-margin">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-space-md text-on-surface-variant">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface font-semibold shrink-0">
+        Empowering Sustainable Operations At
+      </span>
+<div class="flex flex-wrap items-center justify-center gap-space-xl opacity-75 font-headline-sm text-headline-sm font-semibold tracking-tight">
+<span>PACIFIC STATE</span>
+<span>MERIDIAN TECH</span>
+<span>AUSTIN POLYTECHNIC</span>
+<span>FOUNDRY INSTITUTE</span>
+<span>CATHEDRAL ACADEMY</span>
+</div>
+</div>
+</section>
+<!-- Why EcoSense AI Section -->
+<section class="w-full py-space-xl px-gutter md:px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-space-xl gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold">Institutional Stewardship</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Why EcoSense AI? Institutional Impact</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-lg">
+          Transform fragmented building management controllers, disparate power grids, and manual waste surveys into continuous algorithmic clarity.
+        </p>
+</div>
+<!-- 4 Pillars Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Card 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-space-md group-hover:bg-primary group-hover:text-on-primary transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-on-primary text-[24px]">electric_meter</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">AI-Powered Insights</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Real-time anomaly detection across campus power grids, chilled water loops, and facility heating schedules with sub-second latency.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1 font-label-md text-label-md text-primary">
+<span>Read Telemetry Specs</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary/10 flex items-center justify-center mb-space-md group-hover:bg-secondary group-hover:text-on-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary group-hover:text-on-secondary text-[24px]">analytics</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Resource Analytics</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Granular sub-metering, predictive peak demand modeling, and automated ESG Scope 1, 2, and 3 institutional carbon accounting.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1 font-label-md text-label-md text-secondary">
+<span>View ESG Schemas</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-tertiary/10 flex items-center justify-center mb-space-md group-hover:bg-tertiary group-hover:text-on-tertiary transition-colors">
+<span class="material-symbols-outlined text-tertiary group-hover:text-on-tertiary text-[24px]">document_scanner</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Smart Waste Classification</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              On-device &amp; camera AI vision sorting dining and lab waste streams into recyclable, compostable, hazardous, and e-waste.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1 font-label-md text-label-md text-tertiary">
+<span>Explore Vision Models</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed flex items-center justify-center mb-space-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-on-primary-fixed group-hover:text-on-primary-container text-[24px]">task_alt</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Actionable Recommendations</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Prioritized operational shifts ranked by verifiable kilowatt-hour reductions, operational overhead, and tangible budgetary savings.
+            </p>
+</div>
+<div class="pt-space-md mt-space-md flex items-center gap-1 font-label-md text-label-md text-primary">
+<span>Audit Cost Estimators</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: How It Works (Campus-Wide Closed Loop) -->
+<section class="w-full py-space-xl bg-surface-container px-gutter md:px-margin" id="how-it-works">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold">Architectural Telemetry</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Campus-Wide Closed Loop Flow</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          From micro-sensors in mechanical penthouses to student sorting stations, see how EcoSense AI unifies institutional facilities.
+        </p>
+</div>
+<!-- 5-Step Sequence Cards -->
+<div class="grid grid-cols-1 md:grid-cols-5 gap-space-sm relative">
+<!-- Step 1 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-code text-code px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-bold">01</span>
+<span class="material-symbols-outlined text-primary text-[20px]">sensors</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Campus Sub-Meters &amp; Vision</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              BACnet, Modbus, IoT electrical feeders, and edge dining cameras stream telemetry.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-sm text-label-sm text-on-surface-variant">Raw Ingestion Layer</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-code text-code px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-bold">02</span>
+<span class="material-symbols-outlined text-secondary text-[20px]">cloud_sync</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Autonomous AI Ingestion</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Data cleaning, thermal normalization, and time-series aggregation without latency.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-sm text-label-sm text-on-surface-variant">Pipeline Cleansing</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-code text-code px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-bold">03</span>
+<span class="material-symbols-outlined text-tertiary text-[20px]">pattern</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Pattern &amp; Anomaly Detection</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Transformer models flag atypical draw, water pressure drops, and contamination.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-sm text-label-sm text-on-surface-variant">Neural Inference</div>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-code text-code px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-bold">04</span>
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Prioritized Recommendations</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              System generates quantified dispatch plans ordered by ROI and carbon offset impact.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-sm text-label-sm text-on-surface-variant">Action Ranking</div>
+</div>
+<!-- Step 5 -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col justify-between relative">
+<div>
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-code text-code px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-bold">05</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">energy_savings_leaf</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-on-surface mb-1">Measurable Action</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Facilities team executes or system triggers automated damper adjustment with feedback loop.
+            </p>
+</div>
+<div class="mt-space-md pt-space-xs font-label-sm text-label-sm text-primary font-bold">Closing The Loop</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Impact Areas Interactive Showcase -->
+<section class="w-full py-space-xl px-gutter md:px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-xl mx-auto mb-space-lg">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold">Institutional Modules</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Holistic Impact Areas</h2>
+</div>
+<!-- Segmented Control Bar -->
+<div class="flex flex-wrap justify-center gap-2 mb-space-xl" id="impact-tabs">
+<button class="impact-tab-btn px-space-md py-space-xs rounded-full font-label-md text-label-md bg-primary text-on-primary shadow-sm transition-all flex items-center gap-1.5" id="tab-energy" onclick="switchImpactTab('energy')">
+<span class="material-symbols-outlined text-[16px]">bolt</span>
+<span>Energy &amp; HVAC</span>
+</button>
+<button class="impact-tab-btn px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5" id="tab-water" onclick="switchImpactTab('water')">
+<span class="material-symbols-outlined text-[16px]">water_drop</span>
+<span>Water &amp; Irrigation</span>
+</button>
+<button class="impact-tab-btn px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5" id="tab-waste" onclick="switchImpactTab('waste')">
+<span class="material-symbols-outlined text-[16px]">recycling</span>
+<span>Waste Vision AI</span>
+</button>
+<button class="impact-tab-btn px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5" id="tab-carbon" onclick="switchImpactTab('carbon')">
+<span class="material-symbols-outlined text-[16px]">co2</span>
+<span>Scope 1, 2, 3 Carbon</span>
+</button>
+<button class="impact-tab-btn px-space-md py-space-xs rounded-full font-label-md text-label-md bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all flex items-center gap-1.5" id="tab-student" onclick="switchImpactTab('student')">
+<span class="material-symbols-outlined text-[16px]">school</span>
+<span>Student Engagement</span>
+</button>
+</div>
+<!-- Tab Content Area -->
+<div class="bg-surface-container-lowest p-space-lg md:p-space-xl rounded-xl shadow-md" id="tab-content-container">
+<!-- Energy Panel (Default) -->
+<div class="impact-panel grid grid-cols-1 md:grid-cols-12 gap-space-lg items-center" id="panel-energy">
+<div class="md:col-span-6 text-left">
+<span class="px-2 py-1 rounded bg-primary/10 text-primary font-label-sm text-label-sm font-semibold uppercase">Continuous Grid Balancing</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-space-sm">Dynamic HVAC Optimization &amp; Solar Microgrid Tracking</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Synchronize occupancy sensors from registrar timetables with chillers and rooftop solar arrays. EcoSense automatically curtails air exchanges in vacant lecture halls during peak rate electricity windows.
+            </p>
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-metric-md text-metric-md text-primary font-bold">23.8%</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Average Peak HVAC Reduction</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-metric-md text-metric-md text-secondary font-bold">$184,000</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Annual Utility Savings per Quad</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:underline" data-path="resource-analytics" href="#">
+<span>View Interactive Energy Sandbox</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-6 relative">
+<div class="w-full h-80 rounded-xl overflow-hidden shadow-sm bg-surface-container-low relative">
+<img class="w-full h-full object-cover" data-alt="Modern university campus mechanical room with smart digital telemetry displays and clean HVAC ducting, natural lighting, high tech industrial elegance" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAhvJT4y1785We0q1oUNuKtTOadAQ4Qle9KYxpVc8sRnXriMxpvvRxaW9Fqt25M9lk8_u-eIGizIlgGfuDEwOnFjADjS7kio8gEXS7IPIXyeRXbDtQhyXtTgSSsIzSN0fz4EEHm3keiMDqM2ctJ1cxJKjXq78TGcMA4G64zisRxVD8n6FFXxeABIZ-YXwjcZ7KsPSO497K6wMcnGNKfKJcbyJGhxGkUC79xM9UbQhC8C89dsbDt6KApsA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Live Telemetry Hook</span>
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface">Mechanical Quad West Central Plant</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Water Panel -->
+<div class="impact-panel hidden grid-cols-1 md:grid-cols-12 gap-space-lg items-center" id="panel-water">
+<div class="md:col-span-6 text-left">
+<span class="px-2 py-1 rounded bg-secondary/10 text-secondary font-label-sm text-label-sm font-semibold uppercase">Acoustic Leak &amp; Loop Sensing</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-space-sm">Underground Main Sub-metering &amp; Smart Irrigation</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Detect pipe micro-fractures before flooding occurs. Cross-reference soil moisture telemetry with satellite evapotranspiration data to prevent athletic field over-watering.
+            </p>
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-metric-md text-metric-md text-secondary font-bold">1.4M Gal</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Conserved Water / Semester</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-metric-md text-metric-md text-primary font-bold">&lt; 14 Min</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Average Burst Detection Time</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary hover:underline" data-path="resource-analytics" href="#">
+<span>Inspect Hydrology Flow Logs</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-6">
+<div class="w-full h-80 rounded-xl overflow-hidden shadow-sm bg-surface-container-low relative">
+<img class="w-full h-full object-cover" data-alt="High precision modern university campus irrigation garden with digital soil moisture sensors and clear sprinkler lines in lush manicured lawn" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmzonOzW9VPv6Lgr4G0VUJbzn61psOhgicnwFS_6-CdWQWi_aYLOpyfQgHFXZ_ERtL0VTM2KKPyj8PCdHFEJGJXGiXx3Vctmfzv7Kg5B8IGfhycDRX9iuNB9X_5yD6hVeNBGzY_6YPLnifLQZE_3WmUHg8F59nVMO1o-j6-Rq0LLt5ntIlhyddjmL6hJH68399fji-25uz6E84arAQkHxPnQqtt72RKC8XZN8olRGS3qhFbkuBI7tfUg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Sub-Surface Telemetry</span>
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface">Arboretum &amp; Athletic Turf Network</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Waste Panel -->
+<div class="impact-panel hidden grid-cols-1 md:grid-cols-12 gap-space-lg items-center" id="panel-waste">
+<div class="md:col-span-6 text-left">
+<span class="px-2 py-1 rounded bg-tertiary/10 text-tertiary font-label-sm text-label-sm font-semibold uppercase">Computer Vision at Scale</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-space-sm">Camera-Assisted Sorting &amp; Dining Hall Diversion</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Mount lightweight edge vision modules over student disposal stations. Real-time feedback guides students on compost vs landfill while tracking contamination rates across dining halls.
+            </p>
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-metric-md text-metric-md text-tertiary font-bold">96.4%</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Classification Precision</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-metric-md text-metric-md text-primary font-bold">-48%</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Compost Contamination Rate</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-tertiary hover:underline" data-path="resource-analytics" href="#">
+<span>View Waste Vision Models</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-6">
+<div class="w-full h-80 rounded-xl overflow-hidden shadow-sm bg-surface-container-low relative">
+<img class="w-full h-full object-cover" data-alt="Futuristic clean college dining hall sorting station with clean interactive digital touchscreen guiding students on recycling and composting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTS5LRjbpMVjoGIjtCP__9CgtJTjzArQVQsyCD90ahnGJusEqziO9ongw2fVzL44MB7UJ1oz746cK5LYjaUgopdLpxV9SKUxJjWTzQhIWFw-jf7GfiGZohUf9Ecb1DzTHQorrrHYX2wW0Mz28rSMQaRsbctgh9I6jMztx543uxaQDGAUxsxhfWOaJy5WEUwSfLAH4Zlqa0XPmpfTV_Hk2iFQdE5Hi_vZGwwrWsXwgPjzo2LgduPadn9g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm text-tertiary-fixed uppercase tracking-wider">Edge Inference Nodes</span>
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface">Campus Commons Receptacle Matrix</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Carbon Panel -->
+<div class="impact-panel hidden grid-cols-1 md:grid-cols-12 gap-space-lg items-center" id="panel-carbon">
+<div class="md:col-span-6 text-left">
+<span class="px-2 py-1 rounded bg-primary-container/10 text-primary-container font-label-sm text-label-sm font-semibold uppercase">Verifiable ESG Metrics</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-space-sm">Automated GHG Scope 1, 2, and 3 Accounting</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Generate compliance-grade greenhouse gas reports without manual consultants. Pull fleet fuel, grid utility invoices, and commuter patterns into an immutable institutional audit ledger.
+            </p>
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-metric-md text-metric-md text-primary font-bold">100%</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Audit-Ready Traceability</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-metric-md text-metric-md text-secondary font-bold">450+ hrs</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Annual Admin Time Saved</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-primary hover:underline" data-path="reports" href="#">
+<span>Examine GHG Protocols</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-6">
+<div class="w-full h-80 rounded-xl overflow-hidden shadow-sm bg-surface-container-low relative">
+<img class="w-full h-full object-cover" data-alt="High tech institution office dashboard showing carbon audit charts with environmental compliance certificates on sleek monitors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDjEJ8hUp5rswM1DWkRgVvpjCWjCVqcs26czjAlqqXgdQfyjb5OzMdFAcvI2dZVEl2xepzg9Vg-R5-0ThY9GZOqtmLxOQeuaNnGSEDcTWm3-ChQivvbo9zzsI37CIBTH3aTUpxzjPqfgSa1ZJF1W5r4TYFXDTrL5lkpoFjzo3t4TUk6mPwd5YcozHOZQQh5-uVeVuiDWbSEyasIscocemgSr_NfTS2d5VHbtrr7vRkyyH0VMs-IYpuwg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm text-primary-fixed uppercase tracking-wider">Regulatory Compliance</span>
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface">GHG Protocol Enterprise Standard</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Student Engagement Panel -->
+<div class="impact-panel hidden grid-cols-1 md:grid-cols-12 gap-space-lg items-center" id="panel-student">
+<div class="md:col-span-6 text-left">
+<span class="px-2 py-1 rounded bg-secondary-container/30 text-on-secondary-container font-label-sm text-label-sm font-semibold uppercase">Community Gamification</span>
+<h3 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-space-sm">Dorm Energy Challenges &amp; Living Laboratory Dashboards</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">
+              Turn campus facilities into pedagogical tools. Provide residence halls with real-time electricity and water leaderboards, driving student behavior through positive reinforcement and green awards.
+            </p>
+<div class="grid grid-cols-2 gap-space-sm mb-space-md">
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-metric-md text-metric-md text-secondary font-bold">34,000+</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Active Student Participants</p>
+</div>
+<div class="p-space-sm bg-surface-container-low rounded-lg">
+<span class="font-metric-md text-metric-md text-primary font-bold">12.1%</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Behavioral Dorm Energy Drop</p>
+</div>
+</div>
+<a class="inline-flex items-center gap-2 font-label-md text-label-md text-secondary hover:underline" data-path="main-dashboard" href="#">
+<span>View Campus Public Portals</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+<div class="md:col-span-6">
+<div class="w-full h-80 rounded-xl overflow-hidden shadow-sm bg-surface-container-low relative">
+<img class="w-full h-full object-cover" data-alt="Engaged university college students in modern glass atrium reviewing interactive campus sustainability leaderboard on large digital wall" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADxdup99HF6777w0uuVr79Tgk_jdIEnWWX1IfJ5xXAuMfsbRniHRdqKSnwBPruT8TCU5Mtp32WNgzs9CWmpq1xUGYJnpLy2Gvw00jxfdRJDGotW_FrzANyWIGke7cflPdIY0DwwruvJzgNyY5263naV0bs29kNS-F_W2x0jiTODdxFN7G-N87F91coO7w9WPucmmoLQ57r1iXpM0G-fBWndIZBOUhB0KyeZC9oOJ42XXq8kbiXCtz3Xg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent flex flex-col justify-end p-space-md">
+<span class="font-label-sm text-label-sm text-secondary-fixed uppercase tracking-wider">Peer-to-Peer Motivation</span>
+<span class="font-headline-sm text-headline-sm text-inverse-on-surface">Annual Green Quad Cup Challenge</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section: Built Around Responsible AI -->
+<section class="w-full py-space-xl bg-surface-container-low px-gutter md:px-margin">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-2xl mx-auto mb-space-xl">
+<span class="font-label-sm text-label-sm text-primary uppercase tracking-widest font-semibold">Institutional Trust Matrix</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">Built Around Responsible AI</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+          Universities demand ironclad compliance, absolute non-bias, and uncompromising data ethics. EcoSense AI follows rigorous governance protocols.
+        </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Pillar 1 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center mb-space-md text-primary">
+<span class="material-symbols-outlined text-[24px]">lock</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Privacy First</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Zero PII or personal individual tracking. AI computer vision models run ephemeral memory pipelines on-device—no images are saved or transmitted off-host.
+          </p>
+<div class="mt-space-md pt-2">
+<span class="font-code text-code text-on-surface-variant">ISO 27001 &amp; FERPA Compliant</span>
+</div>
+</div>
+<!-- Pillar 2 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center mb-space-md text-secondary">
+<span class="material-symbols-outlined text-[24px]">visibility</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Transparent Reasoning</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Every suggested damper setting, valve closure, or anomaly flag outputs full mathematical reasoning with step-by-step statistical confidence scores.
+          </p>
+<div class="mt-space-md pt-2">
+<span class="font-code text-code text-on-surface-variant">SHAP &amp; LIME Interpretability</span>
+</div>
+</div>
+<!-- Pillar 3 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center mb-space-md text-tertiary">
+<span class="material-symbols-outlined text-[24px]">balance</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Institutional Fairness</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Equitable resource allocation algorithms ensure baseline thermal comfort and lab power guarantees are strictly protected regardless of departmental funding size.
+          </p>
+<div class="mt-space-md pt-2">
+<span class="font-code text-code text-on-surface-variant">Decentralized Parity Audit</span>
+</div>
+</div>
+<!-- Pillar 4 -->
+<div class="bg-surface-container-lowest p-space-lg rounded-xl shadow-sm">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center mb-space-md text-primary-container">
+<span class="material-symbols-outlined text-[24px]">supervisor_account</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">Human-in-the-Loop</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Facilities teams maintain complete sovereignty. Autonomous actuations only take place within pre-approved thresholds, requiring explicit sign-off for critical infrastructure shifts.
+          </p>
+<div class="mt-space-md pt-2">
+<span class="font-code text-code text-on-surface-variant">Zero Autonomous Override</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Large Interactive Conversion Section -->
+<section class="w-full py-space-xl px-gutter md:px-margin bg-surface">
+<div class="max-w-5xl mx-auto rounded-2xl bg-surface-container-lowest p-space-xl shadow-lg relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="absolute -right-20 -top-20 w-80 h-80 bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-xl text-left z-10">
+<span class="font-label-sm text-label-sm text-primary uppercase font-bold tracking-widest">Immediate Campus Deployment</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-2 mb-space-sm">
+          Accelerate Your Net-Zero Timeline by 2030
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Connect your existing building automation infrastructure in under 48 hours without replacing physical hardware sensors.
+        </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-space-sm w-full md:w-auto shrink-0 z-10">
+<a class="px-space-lg py-space-sm bg-primary text-on-primary rounded-lg font-label-md text-label-md text-center hover:bg-primary-container transition-all shadow-sm" data-path="main-dashboard" href="#">
+          Access Live Sandbox
+        </a>
+<button class="px-space-lg py-space-sm bg-surface-container text-on-surface rounded-lg font-label-md text-label-md text-center hover:bg-surface-container-high transition-all shadow-sm" onclick="document.getElementById('demo-modal').classList.remove('hidden')">
+          Request Site Assessment
+        </button>
+</div>
+</div>
+</section>
+<!-- Institutional Demo Modal Overlay -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm" id="demo-modal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-xl shadow-2xl p-space-lg relative text-left">
+<div class="flex items-center justify-between mb-space-md">
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Book Institutional Consultation</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Speak with a Campus Sustainability AI Specialist</p>
+</div>
+<button class="w-8 h-8 rounded-full bg-surface-container flex items-center justify-center text-on-surface hover:bg-surface-container-high" onclick="document.getElementById('demo-modal').classList.add('hidden')">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<form class="space-y-space-sm" onsubmit="event.preventDefault(); alert('Demo request submitted successfully. Our engineering team will reach out within 24 business hours.'); document.getElementById('demo-modal').classList.add('hidden');">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Institutional Email</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest shadow-sm" placeholder="facilities.director@university.edu" required="" type="email"/>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">University / College Entity</label>
+<input class="w-full px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none focus:bg-surface-container-lowest shadow-sm" placeholder="e.g. Stanford University - West Campus" required="" type="text"/>
+</div>
+<div class="grid grid-cols-2 gap-space-sm">
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Campus Square Footage</label>
+<select class="w-full px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none shadow-sm">
+<option>&lt; 500,000 sq ft</option>
+<option>500,000 - 2,000,000 sq ft</option>
+<option>2,000,000+ sq ft</option>
+</select>
+</div>
+<div>
+<label class="block font-label-sm text-label-sm text-on-surface mb-1">Current BMS Gateway</label>
+<select class="w-full px-space-sm py-2 rounded-lg bg-surface-container-low text-on-surface font-body-sm text-body-sm focus:outline-none shadow-sm">
+<option>Johnson Controls Metasys</option>
+<option>Schneider EcoStruxure</option>
+<option>Siemens Desigo CC</option>
+<option>Automated Logic / Other</option>
+</select>
+</div>
+</div>
+<div class="pt-space-sm">
+<button class="w-full py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container shadow-sm transition-colors" type="submit">
+            Confirm Demo Schedule
+          </button>
+</div>
+</form>
+</div>
+</div>
+<!-- Client-Side Tabs Script -->
+<script>
+    function switchImpactTab(tabId) {
+      // Hide all panels
+      const panels = document.querySelectorAll('.impact-panel');
+      panels.forEach(p => {
+        p.classList.add('hidden');
+        p.classList.remove('grid');
+      });
+
+      // Reset all buttons
+      const buttons = document.querySelectorAll('.impact-tab-btn');
+      buttons.forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary');
+        b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+      });
+
+      // Activate clicked panel & button
+      const targetPanel = document.getElementById('panel-' + tabId);
+      const targetBtn = document.getElementById('tab-' + tabId);
+
+      if (targetPanel && targetBtn) {
+        targetPanel.classList.remove('hidden');
+        targetPanel.classList.add('grid');
+
+        targetBtn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+        targetBtn.classList.add('bg-primary', 'text-on-primary');
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-xl shadow-[0_-1px_8px_rgba(0,0,0,0.02)]"><div class="w-full px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="EcoSense AI Logo" class="h-6 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vxg7CX3_dkqnKx2RVPL5Ftm71SI0ChmHyC-gbQf1lKTOkxEHr_lXrMamvsRuVfMapMNyDHQ8DiKWu2-tK0RYGM15YxqzXaqJfgpMPqFPfW4_5WUu-1yHb6lygZIn-rzS9VmOYQdm66WfT2rDHGhHKWkVpByLzQaSbKx8itr4nIcl__NyIF0hcgztx2KtfRritebkQsUbDyoyH2NC831-w-i4MBknYoTFbVA9OTVkS16mnbLYuqGpbXRVOt"/><span class="font-label-md text-label-md text-on-surface-variant">© 2025 EcoSense AI Systems. Institutional Campus Sustainability Protocol.</span></div><div class="flex items-center gap-space-md text-on-surface-variant font-label-sm text-label-sm"><a class="hover:text-on-surface" data-path="settings-governance" href="#">Algorithmic Transparency</a><a class="hover:text-on-surface" data-path="reports" href="#">Audit Logs</a></div></div></footer></body></html>

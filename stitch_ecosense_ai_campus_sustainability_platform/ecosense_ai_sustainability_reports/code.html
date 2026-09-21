@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_dashboard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary":"#825100","surface-dim":"#d2d9f4","primary":"#006948","secondary":"#006398","primary-fixed-dim":"#68dba9","tertiary-fixed":"#ffddb8","inverse-on-surface":"#eef0ff","on-error":"#ffffff","on-primary-fixed-variant":"#005137","on-background":"#131b2e","surface-variant":"#dae2fd","primary-fixed":"#85f8c4","on-surface-variant":"#3d4a42","secondary-fixed-dim":"#93ccff","surface-container-low":"#f2f3ff","tertiary-fixed-dim":"#ffb95f","on-primary-fixed":"#002114","on-secondary-container":"#00476e","secondary-fixed":"#cce5ff","inverse-surface":"#283044","on-tertiary-fixed":"#2a1700","background":"#faf8ff","on-tertiary-container":"#fffbff","outline-variant":"#bccac0","tertiary-container":"#a36700","surface-container":"#eaedff","surface-bright":"#faf8ff","secondary-container":"#5bb8fe","error-container":"#ffdad6","on-secondary":"#ffffff","on-error-container":"#93000a","on-secondary-fixed":"#001d31","inverse-primary":"#68dba9","on-tertiary-fixed-variant":"#653e00","error":"#ba1a1a","surface-tint":"#006c4a","surface-container-high":"#e2e7ff","surface":"#faf8ff","on-primary":"#ffffff","primary-container":"#00855d","on-secondary-fixed-variant":"#004b73","on-primary-container":"#f5fff7","on-tertiary":"#ffffff","outline":"#6d7a72","surface-container-lowest":"#ffffff","on-surface":"#131b2e","surface-container-highest":"#dae2fd"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-sm":"1rem","space-xs":"0.25rem","space-md":"1rem","margin":"2rem","space-sm":"0.5rem","space-lg":"1.5rem","margin-sm":"1rem","space-xl":"2rem","gutter":"1.5rem"},"fontFamily":{"display":["Plus Jakarta Sans"],"label-sm":["Inter"],"body-sm":["Inter"],"display-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"code":["JetBrains Mono"],"body-lg":["Inter"],"metric-xl":["Plus Jakarta Sans"],"body-md":["Inter"],"metric-md":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-md":["Inter"],"headline-sm":["Plus Jakarta Sans"]},"fontSize":{"display":["40px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-mobile":["30px",{"lineHeight":"38px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["28px",{"lineHeight":"36px","letterSpacing":"-0.02em","fontWeight":"600"}],"code":["12px",{"lineHeight":"16px","fontWeight":"500"}],"body-lg":["16px",{"lineHeight":"24px","fontWeight":"400"}],"metric-xl":["32px",{"lineHeight":"38px","letterSpacing":"-0.03em","fontWeight":"700"}],"body-md":["14px",{"lineHeight":"20px","fontWeight":"400"}],"metric-md":["24px",{"lineHeight":"32px","letterSpacing":"-0.02em","fontWeight":"600"}],"headline-md":["22px",{"lineHeight":"30px","letterSpacing":"-0.015em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"headline-sm":["18px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 h-screen w-72 bg-surface-container-lowest flex flex-col justify-between z-50 shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="flex flex-col flex-1 overflow-y-auto px-space-md pt-space-lg"><div class="flex items-center gap-space-sm px-space-xs pb-space-lg mb-space-sm"><img alt="EcoSense AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1Vxg7CX3_dkqnKx2RVPL5Ftm71SI0ChmHyC-gbQf1lKTOkxEHr_lXrMamvsRuVfMapMNyDHQ8DiKWu2-tK0RYGM15YxqzXaqJfgpMPqFPfW4_5WUu-1yHb6lygZIn-rzS9VmOYQdm66WfT2rDHGhHKWkVpByLzQaSbKx8itr4nIcl__NyIF0hcgztx2KtfRritebkQsUbDyoyH2NC831-w-i4MBknYoTFbVA9OTVkS16mnbLYuqGpbXRVOt"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface leading-none">EcoSense AI</span><span class="font-label-sm text-label-sm text-on-surface-variant">Campus Intelligence</span></div></div><div class="px-space-xs mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Operations Core</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="main-dashboard" href="#">Main Dashboard</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="ai-insights" href="#">AI Insights</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="resource-analytics" href="#">Resource Analytics</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="waste-ai-scanner" href="#">Waste AI Scanner</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="ai-assistant" href="#">AI Assistant</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="recommendations" href="#">Recommendations</a><a aria-current="page" class="flex items-center px-space-sm py-space-xs transition-colors bg-primary-container text-on-primary-container font-semibold rounded-lg" data-path="reports" href="#">Reports</a><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="settings-governance" href="#">Settings &amp; Governance</a></nav><div class="px-space-xs mt-space-md mb-space-xs"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">External</span></div><nav class="flex flex-col gap-space-xs" data-active-classes="bg-primary-container text-on-primary-container font-semibold rounded-lg"><a class="flex items-center px-space-sm py-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors font-body-md text-body-md" data-path="landing-page" href="#">Landing Page</a></nav></div><div class="p-space-md bg-surface-container-low"><div class="flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate">Dr. Elena Vance</span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Director</span></div></div><div class="flex items-center gap-space-xs shrink-0"><span class="inline-flex items-center px-space-xs py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">Main</span><a class="p-space-xs text-on-surface-variant hover:text-error hover:bg-error-container/20 rounded-lg transition-colors" data-path="login" href="#" title="Sign Out"><span class="material-symbols-outlined text-[18px]">logout</span></a></div></div></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter"><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[18px]">apartment</span><span>EcoSense OS</span><span class="material-symbols-outlined text-[14px]">chevron_right</span><span class="text-on-surface font-semibold">Telemetry</span></div><div class="relative flex items-center"><select class="appearance-none bg-surface-container-low text-on-surface font-label-sm text-label-sm rounded-lg pl-space-sm pr-space-lg py-space-xs cursor-pointer focus:outline-none focus:ring-1 focus:ring-primary"><option>Main Campus - North Quad</option><option>Science &amp; Tech Campus</option><option>Medical Center</option></select><span class="material-symbols-outlined pointer-events-none absolute right-space-xs text-on-surface-variant text-[16px]">expand_more</span></div></div><div class="flex items-center gap-space-md"><div class="relative flex items-center w-64"><span class="material-symbols-outlined absolute left-space-sm text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-low font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant rounded-lg pl-space-xl pr-space-lg py-space-xs focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Search telemetry, sensors..." type="text"/><span class="absolute right-space-sm font-code text-code text-on-surface-variant bg-surface-container px-space-xs rounded">⌘K</span></div><div class="flex items-center gap-space-xs px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed"><span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span><span class="font-label-sm text-label-sm font-semibold">Engine Active</span></div><div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm bg-surface-container-low px-space-sm py-space-xs rounded-lg"><span class="material-symbols-outlined text-[16px]">calendar_today</span><span>Last 30 Days</span></div><button class="relative p-space-xs rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1 right-1 w-4 h-4 rounded-full bg-error text-on-error font-label-sm text-label-sm flex items-center justify-center text-[10px]">3</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="w-full pt-16 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Content Canvas Container -->
+<div class="p-gutter flex flex-col gap-space-xl max-w-[1600px] mx-auto w-full">
+<!-- Top Action Bar & Header Section -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm flex-wrap">
+<span class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Sustainability Reports</span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+            EcoSense Reporting Engine • GRI &amp; AASHE STARS Aligned
+          </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+          Automated institutional compliance, resource analytics, and ESG executive reports.
+        </p>
+</div>
+<!-- Action Toolset -->
+<div class="flex items-center flex-wrap gap-space-sm">
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">calendar_month</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface cursor-pointer focus:outline-none pr-space-xs">
+<option>Month: September 2026</option>
+<option>Month: August 2026</option>
+<option>Quarter: Q3 2026</option>
+<option>Fiscal Year 2025-26</option>
+</select>
+</div>
+<div class="flex items-center gap-space-xs bg-surface-container-low px-space-sm py-space-xs rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">domain</span>
+<select class="bg-transparent font-label-md text-label-md text-on-surface cursor-pointer focus:outline-none pr-space-xs">
+<option>Main Campus - North Quad</option>
+<option>Science &amp; Tech Campus</option>
+<option>Medical Center &amp; Health Hub</option>
+<option>All Campuses (Consolidated)</option>
+</select>
+</div>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-lowest text-on-surface font-label-md text-label-md rounded-lg shadow-sm hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">download</span>
+          Export All PDFs
+        </button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-primary text-on-primary font-label-md text-label-md rounded-lg shadow-md hover:bg-primary-container transition-all">
+<span class="material-symbols-outlined text-[18px]">forward_to_inbox</span>
+          Schedule Delivery
+        </button>
+</div>
+</div>
+<!-- Top Metric Cards Grid (4 columns) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-gutter">
+<!-- Metric 1 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Reports Generated YTD</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">assignment_turned_in</span>
+</span>
+</div>
+<div class="mt-space-md flex flex-col gap-1">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-metric-xl text-metric-xl text-on-surface">48</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+              +12 MoM
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">verified</span>
+            All audit trails verified
+          </span>
+</div>
+<div class="w-full bg-surface-container h-1 mt-space-md rounded-full overflow-hidden">
+<div class="bg-primary h-full w-[84%] rounded-full"></div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Compliance Standard</span>
+<span class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-[20px]">military_tech</span>
+</span>
+</div>
+<div class="mt-space-md flex flex-col gap-1">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-metric-xl text-metric-xl text-on-surface">STARS Gold</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="font-code text-code text-on-surface font-semibold">78.4 / 100</span>
+            Targeting Platinum (85.0)
+          </span>
+</div>
+<div class="w-full bg-surface-container h-1 mt-space-md rounded-full overflow-hidden">
+<div class="bg-tertiary-container h-full w-[78.4%] rounded-full"></div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Scope 1-3 Verified Carbon</span>
+<span class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[20px]">co2</span>
+</span>
+</div>
+<div class="mt-space-md flex flex-col gap-1">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-metric-xl text-metric-xl text-on-surface">8.6</span>
+<span class="font-label-md text-label-md text-on-surface-variant">tCO2e</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm ml-auto">
+              ↓ 7.1%
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+            Net-Zero Trajectory: On Track
+          </span>
+</div>
+<div class="w-full bg-surface-container h-1 mt-space-md rounded-full overflow-hidden">
+<div class="bg-secondary h-full w-[62%] rounded-full"></div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col justify-between relative overflow-hidden group hover:shadow-md transition-shadow">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Scheduled Dispatches</span>
+<span class="w-8 h-8 rounded-lg bg-surface-variant flex items-center justify-center text-on-surface">
+<span class="material-symbols-outlined text-[20px]">mark_email_read</span>
+</span>
+</div>
+<div class="mt-space-md flex flex-col gap-1">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-metric-xl text-metric-xl text-on-surface">4 Active</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm">
+              Next: Mon 08:00
+            </span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">
+            Provost, Facilities, ESG, Union
+          </span>
+</div>
+<div class="w-full bg-surface-container h-1 mt-space-md rounded-full overflow-hidden">
+<div class="bg-primary-container h-full w-[100%] rounded-full"></div>
+</div>
+</div>
+</div>
+<!-- Report Type Selector & On-Demand AI Generator Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<span class="font-headline-sm text-headline-sm text-on-surface">Telemetry Compilation Suite</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Select an auditable report architecture to generate instant AI-backed regulatory filings.</p>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span>Inference Latency: 1.2s</span>
+</div>
+</div>
+<!-- Horizontal Pills of Report Types -->
+<div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-space-sm" id="reportTypeTabs">
+<button class="flex flex-col gap-1 p-space-sm rounded-lg bg-primary-container text-on-primary-container text-left transition-all shadow-sm" onclick="selectTab(this, 'Monthly Sustainability Report')">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px]">space_dashboard</span>
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary-container"></span>
+</div>
+<span class="font-label-md text-label-md font-semibold mt-1">Monthly Exec</span>
+<span class="font-body-sm text-body-sm opacity-90 truncate">Comprehensive View</span>
+</button>
+<button class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-left transition-all" onclick="selectTab(this, 'Energy &amp; Peak Demand Report')">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px] text-tertiary">bolt</span>
+</div>
+<span class="font-label-md text-label-md font-semibold mt-1">Energy &amp; Peak</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Interval Tariffs</span>
+</button>
+<button class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-left transition-all" onclick="selectTab(this, 'Water &amp; Hydrology Audit')">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px] text-secondary">water_drop</span>
+</div>
+<span class="font-label-md text-label-md font-semibold mt-1">Water Hydrology</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Inflow &amp; Leaks</span>
+</button>
+<button class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-left transition-all" onclick="selectTab(this, 'Waste Stream &amp; Circularity Report')">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px] text-primary">recycling</span>
+</div>
+<span class="font-label-md text-label-md font-semibold mt-1">Waste Circularity</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Diversion Audit</span>
+</button>
+<button class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-left transition-all" onclick="selectTab(this, 'Scope 1-3 Carbon Inventory')">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px] text-tertiary-container">cloud_sync</span>
+</div>
+<span class="font-label-md text-label-md font-semibold mt-1">Scope 1-3 GHG</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">GHG Protocol</span>
+</button>
+<button class="flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-left transition-all" onclick="selectTab(this, 'Responsible AI &amp; Ethics Audit Log')">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-[18px] text-secondary">verified_user</span>
+</div>
+<span class="font-label-md text-label-md font-semibold mt-1">AI Ethics &amp; Trust</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Edge Privacy Log</span>
+</button>
+</div>
+<!-- Generator Configuration Bar -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col lg:flex-row lg:items-center justify-between gap-space-md">
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-md flex-1">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Target Protocol</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg px-space-sm py-2 focus:outline-none shadow-sm cursor-pointer pr-8">
+<option>AASHE STARS 2.2 + GRI Standards</option>
+<option>GHG Corporate Protocol Standard</option>
+<option>ASHRAE 90.1 Energy Audit v4</option>
+<option>Board of Regents Quarterly ESG Filing</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-2.5 text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Campus Sector / Quad</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg px-space-sm py-2 focus:outline-none shadow-sm cursor-pointer pr-8">
+<option>North Quad &amp; Research Centers</option>
+<option>South Residential Village</option>
+<option>Athletic &amp; Dining Complex</option>
+<option>Consolidated Institution</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-2.5 text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant uppercase">Reporting Window</label>
+<div class="relative">
+<select class="w-full appearance-none bg-surface-container-lowest text-on-surface font-body-sm text-body-sm rounded-lg px-space-sm py-2 focus:outline-none shadow-sm cursor-pointer pr-8">
+<option>Past 30 Days (Sep 1 - Sep 30, 2026)</option>
+<option>Q3 2026 (Jul 1 - Sep 30, 2026)</option>
+<option>Academic Year 2025-26</option>
+<option>Custom Telemetry Range...</option>
+</select>
+<span class="material-symbols-outlined pointer-events-none absolute right-2 top-2.5 text-[16px] text-on-surface-variant">expand_more</span>
+</div>
+</div>
+</div>
+<button class="inline-flex items-center justify-center gap-space-sm px-space-lg py-2.5 bg-primary text-on-primary font-headline-sm text-body-md rounded-lg shadow-md hover:bg-primary-container transition-all whitespace-nowrap self-stretch lg:self-end" id="generateBtn" onclick="simulateRegeneration()">
+<span class="material-symbols-outlined text-[18px]">auto_awesome</span>
+<span>Generate AI Report</span>
+<span class="font-label-sm text-label-sm opacity-80">(Instant)</span>
+</button>
+</div>
+</div>
+<!-- MAIN TWO-COLUMN WORKSPACE: Interactive Document Viewer & Sidebar Details -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter items-start">
+<!-- LEFT: Live Interactive Preview Card (8 cols) -->
+<div class="xl:col-span-8 flex flex-col gap-space-md">
+<!-- Document Viewer Container -->
+<div class="bg-surface-container-lowest rounded-2xl shadow-md p-space-xl relative overflow-hidden flex flex-col gap-space-xl">
+<!-- Watermark Texture & Subtle Visual Background -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-gradient-to-br from-primary/5 via-secondary/5 to-transparent blur-3xl pointer-events-none"></div>
+<!-- Document Header -->
+<div class="flex flex-col sm:flex-row sm:items-start justify-between gap-space-lg pb-space-lg bg-surface-container-low/50 -mx-space-xl -mt-space-xl p-space-xl rounded-t-2xl">
+<div class="flex items-start gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-surface-container-lowest shadow-sm flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[32px]">verified</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-code text-code uppercase tracking-wider text-primary font-semibold">CONFIDENTIAL • VERIFIED TELEMETRY</span>
+<span class="inline-block w-1 h-1 rounded-full bg-on-surface-variant"></span>
+<span class="font-code text-code text-on-surface-variant">ID: REP-2026-09-NQ</span>
+</div>
+<h1 class="font-headline-md text-headline-md text-on-surface font-display mt-0.5" id="previewTitle">
+                  September 2026 Campus Sustainability &amp; Resource Report
+                </h1>
+<span class="font-label-md text-label-md text-secondary mt-0.5">Executive Edition • High-Assurance Environmental Disclosure</span>
+</div>
+</div>
+<div class="flex flex-col sm:items-end text-left sm:text-right shrink-0">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Generated • Oct 01, 2026</span>
+<span class="font-body-sm text-body-sm font-semibold text-on-surface mt-0.5">University Sustainability Council</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">&amp; Board of Regents Governance</span>
+</div>
+</div>
+<!-- Section 1: Executive Summary -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-code text-code text-primary font-bold">01</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Executive Summary</span>
+</div>
+<span class="font-label-sm text-label-sm px-2 py-0.5 bg-primary-fixed text-on-primary-fixed rounded-full font-semibold">
+                Audit Pass: Grade A+
+              </span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row gap-space-lg items-center">
+<div class="flex-1 font-body-md text-body-md text-on-surface leading-relaxed">
+                During <strong class="text-on-surface font-semibold">September 2026</strong>, Main Campus achieved an overall Sustainability Score of <strong class="text-primary font-semibold">78/100 (+6.4% YoY)</strong>. Cross-utility telemetry recorded a net energy consumption reduction of <span class="text-primary font-semibold font-code">8.2% (24,680 kWh)</span> and potable water savings of <span class="text-secondary font-semibold font-code">5.7% (186,400 L)</span>. Autonomous edge waste sorting coupled with automated peak load shifting averted an estimated <strong class="text-on-surface font-semibold">$3,420</strong> in peak-demand utility surcharges across North Quad.
+              </div>
+<!-- Mini Visual Donut/Ring Widget -->
+<div class="flex flex-col items-center justify-center p-space-sm bg-surface-container-lowest rounded-xl shadow-sm shrink-0 w-44">
+<div class="relative flex items-center justify-center w-24 h-24">
+<svg class="w-full h-full transform -rotate-90" viewbox="0 0 36 36">
+<path class="text-surface-container" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-width="3.5"></path>
+<path class="text-primary" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="currentColor" stroke-dasharray="78.4, 100" stroke-linecap="round" stroke-width="3.5"></path>
+</svg>
+<div class="absolute flex flex-col items-center justify-center text-center">
+<span class="font-metric-md text-metric-md text-on-surface leading-none">78.4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">INDEX SCORE</span>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-2">STARS Composite</span>
+</div>
+</div>
+</div>
+<!-- Section 2: Utility Key Performance Indicators (Structured Comparison Table) -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-code text-code text-primary font-bold">02</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Utility Key Performance Indicators</span>
+</div>
+<span class="font-code text-code text-on-surface-variant">Validated Sensor Mesh N=428</span>
+</div>
+<div class="overflow-x-auto rounded-xl bg-surface-container-low shadow-sm">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container text-on-surface-variant font-label-sm text-label-sm uppercase tracking-wider">
+<th class="py-3 px-space-md">Metric &amp; Domain</th>
+<th class="py-3 px-space-md text-right">Target Baseline</th>
+<th class="py-3 px-space-md text-right">Actual Telemetry</th>
+<th class="py-3 px-space-md text-right">Delta</th>
+<th class="py-3 px-space-md">Benchmark Status</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-high/50 font-body-sm text-body-sm text-on-surface">
+<tr class="hover:bg-surface-container-lowest/60 transition-colors">
+<td class="py-3 px-space-md flex items-center gap-space-xs font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary">bolt</span>
+                      Energy Consumption
+                    </td>
+<td class="py-3 px-space-md text-right font-code text-on-surface-variant">26,890 kWh</td>
+<td class="py-3 px-space-md text-right font-code font-semibold text-on-surface">24,680 kWh</td>
+<td class="py-3 px-space-md text-right font-code text-primary font-bold">-8.2%</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+                        Ahead of Target (Optimal)
+                      </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest/60 transition-colors">
+<td class="py-3 px-space-md flex items-center gap-space-xs font-semibold">
+<span class="material-symbols-outlined text-[16px] text-tertiary-container">speed</span>
+                      Peak Demand Spike
+                    </td>
+<td class="py-3 px-space-md text-right font-code text-on-surface-variant">120.0 kW</td>
+<td class="py-3 px-space-md text-right font-code font-semibold text-error">142.4 kW</td>
+<td class="py-3 px-space-md text-right font-code text-error font-bold">+18.7%</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">warning</span>
+                        Anomaly Mitigated (CS Lab B)
+                      </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest/60 transition-colors">
+<td class="py-3 px-space-md flex items-center gap-space-xs font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary">water_drop</span>
+                      Water Intake &amp; Inflow
+                    </td>
+<td class="py-3 px-space-md text-right font-code text-on-surface-variant">197,000 L</td>
+<td class="py-3 px-space-md text-right font-code font-semibold text-on-surface">186,400 L</td>
+<td class="py-3 px-space-md text-right font-code text-primary font-bold">-5.7%</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+                        On Track (Within Budget)
+                      </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest/60 transition-colors">
+<td class="py-3 px-space-md flex items-center gap-space-xs font-semibold">
+<span class="material-symbols-outlined text-[16px] text-primary">recycling</span>
+                      Solid Waste Diversion
+                    </td>
+<td class="py-3 px-space-md text-right font-code text-on-surface-variant">80.0%</td>
+<td class="py-3 px-space-md text-right font-code font-semibold text-primary">84.2%</td>
+<td class="py-3 px-space-md text-right font-code text-primary font-bold">+4.2%</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">star</span>
+                        Exceeds Target (Class A)
+                      </span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-lowest/60 transition-colors">
+<td class="py-3 px-space-md flex items-center gap-space-xs font-semibold">
+<span class="material-symbols-outlined text-[16px] text-secondary">co2</span>
+                      Net Carbon Intensity
+                    </td>
+<td class="py-3 px-space-md text-right font-code text-on-surface-variant">9.3 tCO2e</td>
+<td class="py-3 px-space-md text-right font-code font-semibold text-on-surface">8.6 tCO2e</td>
+<td class="py-3 px-space-md text-right font-code text-primary font-bold">-7.1%</td>
+<td class="py-3 px-space-md">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-[14px]">trending_down</span>
+                        Ahead of 2030 Roadmap
+                      </span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Section 3: Key AI Interventions & Telemetry Anomalies -->
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-code text-code text-primary font-bold">03</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Key AI Interventions &amp; Telemetry Anomalies</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">14 Events Flagged • 100% Mitigated</span>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Event Card 1 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-code text-tertiary">SEP 12 • 14:10</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+                    Saved $320/day
+                  </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">CS Complex Lab B Cooling Surge</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Chiller setpoint overridden by automated HVAC damper balancing algorithm before peak tariff window.
+                  </p>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Autonomous Load Modulation</span>
+</div>
+</div>
+<!-- Event Card 2 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-code text-secondary">SEP 19 • 03:45</span>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">
+                    Saved 18.4k L/wk
+                  </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Sub-feeder C3 Micro-Irrigation Leak</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Continuous acoustic vibration trigger isolated nocturnal pipe weeping in North Quad turf zone.
+                  </p>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Facilities Valve Auto-Shutoff</span>
+</div>
+</div>
+<!-- Event Card 3 -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm font-code text-primary">SEP 27 • 12:30</span>
+<span class="px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-semibold">
+                    -42% Contamination
+                  </span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-on-surface font-semibold">Dining Hall Station 2 Contamination</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">
+                    Computer vision camera logged recurrent non-compostable ingestion; updated dynamic signage display instantly.
+                  </p>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm pt-space-xs">
+<span class="material-symbols-outlined text-[16px] text-primary">check_circle</span>
+<span>Edge Vision Classification</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Section 4: Responsible AI Attestation & Data Governance -->
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-code text-code text-primary font-bold">04</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Responsible AI Attestation &amp; Data Governance</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">ISO 50001 Verified</span>
+</div>
+<div class="bg-surface-container-low rounded-xl p-space-md flex flex-col md:flex-row md:items-center justify-between gap-space-md">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px] text-primary">lock</span>
+<span class="font-label-md text-label-md font-semibold text-on-surface">Cryptographic Proof &amp; Model Provenance</span>
+</div>
+<div class="flex items-center gap-space-sm flex-wrap text-on-surface-variant font-code text-code">
+<span>SHA256: <strong class="text-on-surface select-all">7f8c92a0134bd5298f0e0394782bb19</strong></span>
+<span>•</span>
+<span>ASHRAE 90.1 Compliant</span>
+<span>•</span>
+<span>Zero Facial Retention Edge Privacy</span>
+</div>
+</div>
+<!-- Sign-off Seal -->
+<div class="flex items-center gap-space-sm shrink-0 bg-surface-container-lowest px-space-md py-space-xs rounded-lg shadow-sm">
+<span class="material-symbols-outlined text-[24px] text-primary">shield</span>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Dr. Elena Vance</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant text-[10px]">Chief Sustainability Officer</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Document Action Toolbar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-md bg-surface-container-low/30 -mx-space-xl -mb-space-xl p-space-xl rounded-b-2xl">
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md shadow-sm hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">download_done</span>
+                Download Signed PDF
+              </button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">table_chart</span>
+                Export Raw CSV Telemetry
+              </button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-space-xs px-space-md py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-sm hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">share</span>
+                Share with Provost via Secure Link
+              </button>
+<button class="p-2 rounded-lg bg-surface-container-lowest text-on-surface-variant hover:text-on-surface hover:bg-surface-container shadow-sm transition-colors" title="Print Official Dispatch">
+<span class="material-symbols-outlined text-[20px]">print</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT: Archive Table & Scheduled Delivery Automation (4 cols) -->
+<div class="xl:col-span-4 flex flex-col gap-gutter">
+<!-- Scheduled Automated Delivery Settings Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary">schedule_send</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Automated Dispatches</span>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold">3 Active</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Zero-touch scheduled report compilations broadcasted to academic leadership and operational leads.
+          </p>
+<div class="flex flex-col gap-space-sm">
+<!-- Delivery 1 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Weekly Facilities Summary</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Mondays @ 08:00 AM • Facilities Team</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" onchange="toggleDeliveryStatus(this, 'Weekly Facilities Summary')" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Delivery 2 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Monthly Board &amp; Provost ESG</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">1st of Month • President &amp; Provost</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" onchange="toggleDeliveryStatus(this, 'Monthly Board &amp; Provost ESG')" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+<!-- Delivery 3 -->
+<div class="bg-surface-container-low rounded-lg p-space-md flex items-center justify-between gap-space-sm hover:bg-surface-container transition-colors">
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate">Daily Waste Anomaly Digest</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Daily @ 22:00 PM • Dining Operations</span>
+</div>
+<label class="relative inline-flex items-center cursor-pointer shrink-0">
+<input checked="" class="sr-only peer" onchange="toggleDeliveryStatus(this, 'Daily Waste Anomaly Digest')" type="checkbox"/>
+<div class="w-9 h-5 bg-surface-variant peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<button class="inline-flex items-center justify-center gap-space-xs w-full py-2 bg-surface-container-low text-on-surface font-label-md text-label-md rounded-lg hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+            Configure New Cadence
+          </button>
+</div>
+<!-- Recent Reports Archive Panel -->
+<div class="bg-surface-container-lowest rounded-xl p-space-lg shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-secondary">folder_zip</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Reports Archive</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Immutable Logs</span>
+</div>
+<!-- Archive List -->
+<div class="flex flex-col divide-y divide-surface-container">
+<!-- Item 1 -->
+<div class="py-space-sm flex items-center justify-between gap-space-sm group">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors">
+                    August 2026 Comprehensive Sustainability Report
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PDF • 14.2 MB • Signed Sep 01</span>
+</div>
+</div>
+<button class="p-space-xs text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors shrink-0" title="Download">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+<!-- Item 2 -->
+<div class="py-space-sm flex items-center justify-between gap-space-sm group">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-tertiary shrink-0">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors">
+                    Q2 2026 GHG Scope 1-3 Carbon Inventory
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PDF • 8.6 MB • Signed Jul 02</span>
+</div>
+</div>
+<button class="p-space-xs text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors shrink-0" title="Download">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+<!-- Item 3 -->
+<div class="py-space-sm flex items-center justify-between gap-space-sm group">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-secondary shrink-0">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors">
+                    July 2026 Water Conservation &amp; Hydrology Audit
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PDF • 6.1 MB • Signed Aug 01</span>
+</div>
+</div>
+<button class="p-space-xs text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors shrink-0" title="Download">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+<!-- Item 4 -->
+<div class="py-space-sm flex items-center justify-between gap-space-sm group">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-9 h-9 rounded-lg bg-surface-container-low flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[20px]">picture_as_pdf</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md font-semibold text-on-surface truncate group-hover:text-primary transition-colors">
+                    Academic Year 2025-2026 Executive ESG Synthesis
+                  </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">PDF • 28.4 MB • Signed Jun 15</span>
+</div>
+</div>
+<button class="p-space-xs text-on-surface-variant hover:text-primary hover:bg-surface-container rounded-lg transition-colors shrink-0" title="Download">
+<span class="material-symbols-outlined text-[20px]">download</span>
+</button>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-space-xs text-primary font-label-md text-label-md hover:underline pt-space-xs" href="#">
+<span>Browse Full Regulatory Vault (184 filings)</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Campus Operations ESG Trust Seal Card -->
+<div class="bg-gradient-to-br from-surface-container to-surface-container-high rounded-xl p-space-lg shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[28px]">verified_user</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Zero Data Tampering</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Cryptographic Merkle Proofs</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+            All reports outputted by the EcoSense platform carry decentralized telemetry attestations compliant with SEC ESG proposed disclosure standards and EU CSRD taxonomy.
+          </p>
+<div class="flex items-center justify-between text-on-surface-variant font-code text-code pt-space-xs">
+<span>Audit Key: 0x9AF8...D12</span>
+<span class="text-primary font-semibold">100% Immutable</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  function selectTab(button, reportName) {
+    const parent = document.getElementById('reportTypeTabs');
+    const allButtons = parent.querySelectorAll('button');
+    
+    allButtons.forEach(btn => {
+      btn.className = 'flex flex-col gap-1 p-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface text-left transition-all';
+      const indicator = btn.querySelector('.rounded-full.bg-on-primary-container');
+      if (indicator) indicator.remove();
+    });
+
+    button.className = 'flex flex-col gap-1 p-space-sm rounded-lg bg-primary-container text-on-primary-container text-left transition-all shadow-sm';
+    
+    const iconContainer = button.querySelector('div');
+    if (iconContainer && !iconContainer.querySelector('.w-1\\.5')) {
+      const dot = document.createElement('span');
+      dot.className = 'w-1.5 h-1.5 rounded-full bg-on-primary-container';
+      iconContainer.appendChild(dot);
+    }
+
+    const titleEl = document.getElementById('previewTitle');
+    if (titleEl) {
+      titleEl.textContent = 'September 2026 ' + reportName;
+    }
+  }
+
+  function simulateRegeneration() {
+    const btn = document.getElementById('generateBtn');
+    const originalContent = btn.innerHTML;
+    
+    btn.innerHTML = `
+      <span class="material-symbols-outlined text-[18px] animate-spin">refresh</span>
+      <span>Compiling Model Weights...</span>
+    `;
+    btn.disabled = true;
+    btn.classList.add('opacity-80');
+
+    setTimeout(() => {
+      btn.innerHTML = `
+        <span class="material-symbols-outlined text-[18px]">task_alt</span>
+        <span>Compiled Fresh!</span>
+      `;
+      setTimeout(() => {
+        btn.innerHTML = originalContent;
+        btn.disabled = false;
+        btn.classList.remove('opacity-80');
+      }, 1500);
+    }, 1200);
+  }
+
+  function toggleDeliveryStatus(checkbox, taskName) {
+    const state = checkbox.checked ? 'activated' : 'paused';
+    console.log(`Report automation for "${taskName}" has been ${state}.`);
+  }
+</script></main></div></body></html>
